@@ -45,8 +45,8 @@ class Solution:
     #Reverse and stringify num1 and num2 lists and change to int type
     num1.reverse()
     num2.reverse()
-    num1 = "".join(str(x) for x in num1)
-    num2 = "".join(str(y) for y in num2)
+    num1 = ''.join(str(x) for x in num1)
+    num2 = ''.join(str(y) for y in num2)
     num1 = int(num1)
     num2 = int(num2)
 
