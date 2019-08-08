@@ -39,8 +39,7 @@ def find_number_of_words(wordlist, puzzles):
                # key must exist in word
                # if the key exists in word, remove key from word to make a subword
                if key in word:
-                    subword = word.replace(key,'')
-                    subword = ''.join(sorted(subword))
+                    subword = ''.join(sorted(word.replace(key,'')))
                     value = ''.join(sorted(value))
                     if subword in value:
                          count += 1
